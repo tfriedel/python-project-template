@@ -1,14 +1,34 @@
 # Python Project Template
 
-Modern Python Project
+[![CI](https://github.com/mjun0812/python-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/mjun0812/python-project-template/actions/workflows/ci.yml)
 
-## Development Setup
+A simple modern Python project template.
 
-After generating your project:
+This repository is created by [mjun0812/python-copier-template](https://github.com/mjun0812/python-copier-template) using [copier](https://copier.readthedocs.io/).
+
+## Features
+
+- 🚀 **Modern Python**: Support for Python 3.10-3.13
+- 📦 **uv Package Manager**: Fast and reliable package management with [uv](https://github.com/astral-sh/uv)
+- 🐳 **Docker Support**: Complete Docker development environment
+- 📦 **Devcontainer Support**: VS Code devcontainer for consistent development
+- ✨ **AI Editor Support**: [Cursor rules](https://docs.cursor.com/context/rules) and
+  [CLAUDE.md](https://docs.anthropic.com/en/docs/claude-code/overview) included for AI-powered development
+- 📝 **Type Hints**: Full type annotation support with modern Python features
+- 🔍 **Code Quality**: Pre-configured Ruff for linting and formatting
+- 🧪 **Testing**: pytest setup with example tests
+- 🔧 **Pre-commit Hooks**: Automated code quality checks
+- 🏗️ **CI Ready**: GitHub Actions workflows included
+
+## Quick Start
+
+### Pre-Requirements
+
+- [uv](https://docs.astral.sh/uv/): Fast Python package installer
+
+### Development Setup
 
 ```bash
-cd your-project-name
-
 # Install dependencies
 uv sync
 
@@ -25,7 +45,7 @@ uv run ruff check .
 uv run ruff check . --fix
 ```
 
-### Docker Development
+### Docker Development Setup
 
 The template includes a complete Docker setup:
 
@@ -45,3 +65,39 @@ docker compose up
 ### VS Code Devcontainer
 
 Open the project in VS Code and use the "Reopen in Container" command for a fully configured development environment.
+
+### Update Template
+
+Thit template is created by [mjun0812/python-copier-template](https://github.com/mjun0812/python-copier-template).
+You can apply update from it.
+
+```bash
+cd your-project-name
+uvx copier update -A
+```
+
+## Project Structure
+
+```text
+your-project/
+├── src/
+│   └── your_project/          # Main package
+├── tests/                     # Test files
+├── docker/                    # Docker configuration
+├── compose.yml               # Docker Compose setup
+├── pyproject.toml            # Project configuration
+└── README.md                 # Project documentation
+```
+
+## Q&A
+
+### Why don't you use a type checker?
+
+I'm waiting for stable release of [`ty`](https://github.com/astral-sh/ty).
+You can install and use your preferred type checker.
+
+## Support
+
+- 📖 [Copier Documentation](https://copier.readthedocs.io/)
+- 🐍 [uv Documentation](https://docs.astral.sh/uv/)
+- 🔍 [Ruff Documentation](https://docs.astral.sh/ruff/)
