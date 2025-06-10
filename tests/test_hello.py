@@ -3,7 +3,7 @@ from my_package import hello
 
 def test_hello() -> None:
     result = hello()
-    expected = "Hello from Python Project Template!"
+    expected = "Hello from Python-Project-Template!"
     assert result == expected
 
 

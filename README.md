@@ -1,4 +1,4 @@
-# Python Project Template
+# Python-Project-Template
 
 [![CI](https://github.com/mjun0812/python-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/mjun0812/python-project-template/actions/workflows/ci.yml)
 
