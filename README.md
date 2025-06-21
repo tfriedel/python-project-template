@@ -6,6 +6,8 @@ A simple modern Python project template.
 
 This repository is created by [mjun0812/python-copier-template](https://github.com/mjun0812/python-copier-template) using [copier](https://copier.readthedocs.io/).
 
+[Article](https://mjunya.com/en/posts/2025-06-15-python-template/) [日本語記事](https://zenn.dev/mjun0812/articles/0ae2325d40ed20)
+
 ## Features
 
 - 🚀 **Modern Python**: Support for Python 3.10-3.13
