@@ -16,27 +16,59 @@ This repository is created by [mjun0812/python-copier-template](https://github.c
 - 📦 **Devcontainer Support**: VS Code devcontainer for consistent development
 - ✨ **AI Editor Support**: [Cursor rules](https://docs.cursor.com/context/rules) and
   [CLAUDE.md](https://docs.anthropic.com/en/docs/claude-code/overview) included for AI-powered development
+- 🛡️ **TDD-Guard**: Automated TDD enforcement for Claude Code with real-time test-driven development validation
 - 📝 **Type Hints**: Full type annotation support with modern Python features
 - 🔍 **Code Quality**: Pre-configured Ruff for linting and formatting
 - 🧪 **Testing**: pytest setup with example tests
 - 🔧 **Pre-commit Hooks**: Automated code quality checks
 - 🏗️ **CI Ready**: GitHub Actions workflows included
+- 🔨 **Makefile**: Convenient commands for common development tasks
 
 ## Quick Start
 
 ### Pre-Requirements
 
 - [uv](https://docs.astral.sh/uv/): Fast Python package installer
+- [TDD-Guard](https://github.com/nizos/tdd-guard) (optional, for TDD enforcement with Claude Code): `npm install -g tdd-guard`
 
 ### Development Setup
 
 ```bash
+# Quick setup (installs dependencies and pre-commit hooks)
+make setup
+
+# Or manually:
 # Install dependencies
 uv sync
 
 # Install pre-commit hooks
 uv run pre-commit install
+```
 
+### Common Commands
+
+```bash
+# View all available commands
+make help
+
+# Testing
+make test              # Run tests
+make test-verbose      # Run tests with verbose output
+make test-coverage     # Run tests with coverage report
+
+# Code quality
+make format            # Format code with ruff
+make lint              # Check code quality
+make lint-fix          # Auto-fix linting issues
+
+# Development workflow
+make ci                # Run full CI pipeline (format, lint, test)
+make clean             # Clean up temporary files and caches
+```
+
+### Manual Commands (without Makefile)
+
+```bash
 # Run tests
 uv run pytest
 

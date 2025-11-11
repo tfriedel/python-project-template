@@ -15,7 +15,12 @@ build-backend = "hatchling.build"
 packages = ["src/my_package"]
 
 [dependency-groups]
-dev = ["pre-commit>=4.2.0", "pytest>=8.4.0", "ruff>=0.11.12"]
+dev = [
+    "pre-commit>=4.2.0",
+    "pytest>=8.4.0",
+    "ruff>=0.11.12",
+    "tdd-guard-pytest>=0.1.2",
+]
 
 [tool.ruff]
 line-length = 100
