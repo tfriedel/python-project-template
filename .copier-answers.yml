@@ -1,8 +1,8 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
 _commit: v1.1.0
-_src_path: gh:mjun0812/python-copier-template
-author_email: mjun@mjunya.com
-author_name: Junya Morioka
+_src_path: gh:tfriedel/python-copier-template
+author_email: thomas.friedel@gmail.com
+author_name: Thomas Friedel
 description: Modern Python Project
 package_name: my_package
 project_name: Python-Project-Template

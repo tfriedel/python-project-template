@@ -1,12 +1,12 @@
 # Python-Project-Template
 
-[![CI](https://github.com/mjun0812/python-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/mjun0812/python-project-template/actions/workflows/ci.yml)
+[![CI](https://github.com/tfriedel/python-project-template/actions/workflows/ci.yml/badge.svg)](https://github.com/tfriedel/python-project-template/actions/workflows/ci.yml)
 
-A simple modern Python project template.
+A modern Python project template with enhanced TDD workflow support.
 
-This repository is created by [mjun0812/python-copier-template](https://github.com/mjun0812/python-copier-template) using [copier](https://copier.readthedocs.io/).
-
-[Article](https://mjunya.com/en/posts/2025-06-15-python-template/) [日本語記事](https://zenn.dev/mjun0812/articles/0ae2325d40ed20)
+> **Note**: This is a fork of [mjun0812/python-project-template](https://github.com/mjun0812/python-project-template), generated from [tfriedel/python-copier-template](https://github.com/tfriedel/python-copier-template).
+>
+> Original template by Junya Morioka - [Article](https://mjunya.com/en/posts/2025-06-15-python-template/) | [日本語記事](https://zenn.dev/mjun0812/articles/0ae2325d40ed20)
 
 ## Features
 
@@ -102,8 +102,9 @@ Open the project in VS Code and use the "Reopen in Container" command for a full
 
 ### Update Template
 
-Thit template is created by [mjun0812/python-copier-template](https://github.com/mjun0812/python-copier-template).
-You can apply update from it.
+This template is created from [tfriedel/python-copier-template](https://github.com/tfriedel/python-copier-template), a fork of [mjun0812/python-copier-template](https://github.com/mjun0812/python-copier-template) with TDD-Guard integration.
+
+You can apply updates from the template:
 
 ```bash
 cd your-project-name
